@@ -21,6 +21,7 @@
         <key>insert</key>
         <string>($1)</string>
     </dict>
+
     <!-- Bases -->
     <dict>
         <key>display</key>
@@ -42,6 +43,85 @@
         <key>insert</key>
         <string>()</string>
     </dict>
+    <dict>
+        <key>display</key>
+        <string>decodeURI</string>
+        <key>insert</key>
+        <string>(${1:'${2:uri}'})</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>decodeURIComponent</string>
+        <key>insert</key>
+        <string>(${1:'${2:uri}'})</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>encodeURI</string>
+        <key>insert</key>
+        <string>(${1:'${2:uri}'})</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>encodeURIComponent</string>
+        <key>insert</key>
+        <string>(${1:'${2:uri}'})</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>eval</string>
+        <key>insert</key>
+        <string>(${1:'${2:uri}'})</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>isFinite</string>
+        <key>insert</key>
+        <string>(${1:'${2:uri}'})</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>isNaN</string>
+        <key>insert</key>
+        <string>(${1:'${2:uri}'})</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>parseFloat</string>
+        <key>insert</key>
+        <string>(${1:'${2:uri}'})</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>parseInt</string>
+        <key>insert</key>
+        <string>(${1:'${2:uri}'})</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>uneval</string>
+        <key>insert</key>
+        <string>(${1:'${2:uri}'})</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>Infinity</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>NaN</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>undefined</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>RegExp</string>
+        <key>insert</key>
+        <string>(${1:'${2:regexp}'}${3:,'${4:flags}'})</string>
+    </dict>
+
     <!-- DOM -->
     <dict>
         <key>display</key>
@@ -581,6 +661,184 @@
     ${4:'${5:filename}'}${6:,
     ${7:lineNumber}}}
 )</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>stack</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>message</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>name</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>EvalError</string>
+        <key>insert</key>
+        <string>(
+    ${1:'${2:message}'}${3:,
+    ${4:'${5:filename}'}${6:,
+    ${7:lineNumber}}}
+)</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>InternalError</string>
+        <key>insert</key>
+        <string>(
+    ${1:'${2:message}'}${3:,
+    ${4:'${5:filename}'}${6:,
+    ${7:lineNumber}}}
+)</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>RangeError</string>
+        <key>insert</key>
+        <string>(
+    ${1:'${2:message}'}${3:,
+    ${4:'${5:filename}'}${6:,
+    ${7:lineNumber}}}
+)</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>ReferenceError</string>
+        <key>insert</key>
+        <string>(
+    ${1:'${2:message}'}${3:,
+    ${4:'${5:filename}'}${6:,
+    ${7:lineNumber}}}
+)</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>StopIteration</string>
+        <key>insert</key>
+        <string>(
+    ${1:'${2:message}'}${3:,
+    ${4:'${5:filename}'}${6:,
+    ${7:lineNumber}}}
+)</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>SyntaxError</string>
+        <key>insert</key>
+        <string>(
+    ${1:'${2:message}'}${3:,
+    ${4:'${5:filename}'}${6:,
+    ${7:lineNumber}}}
+)</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>TypeError</string>
+        <key>insert</key>
+        <string>(
+    ${1:'${2:message}'}${3:,
+    ${4:'${5:filename}'}${6:,
+    ${7:lineNumber}}}
+)</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>URIError</string>
+        <key>insert</key>
+        <string>(
+    ${1:'${2:message}'}${3:,
+    ${4:'${5:filename}'}${6:,
+    ${7:lineNumber}}}
+)</string>
+    </dict>
+
+    <!-- Function -->
+    <dict>
+        <key>display</key>
+        <string>Function</string>
+        <key>insert</key>
+        <string>($1)
+{
+    $2
+}</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>function</string>
+        <key>insert</key>
+        <string>($1)
+{
+    $2
+}</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>apply</string>
+        <key>insert</key>
+        <string>(${1:scope}, ${2:arguments})</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>apply</string>
+        <key>insert</key>
+        <string>(${1:scope}, ${2:arguments})</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>call</string>
+        <key>insert</key>
+        <string>(${1:scope}, ${2:arg1}${3:,${4:arg2…}})</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>caller</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>name</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>arguments</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>bind</string>
+        <key>insert</key>
+        <string>(${1:scope}, ${2:arg1}${3:,${4:arg2…}})</string>
+    </dict>
+
+    <!-- JSON -->
+    <dict>
+        <key>display</key>
+        <string>JSON</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>JSON.parse</string>
+        <key>insert</key>
+        <string>(${1:json}${2:, function(k, v)
+{
+    $4
+\}})</string>
+    </dict>
+    <dict>
+        <key>display</key>
+        <string>JSON.stringify</string>
+        <key>insert</key>
+        <string>(${1:json}${2:, ${3:function(k, v)
+{
+    $6
+\}}}${4:,${5:space}})</string>
+    </dict>
+
+    <!-- Math -->
+    <dict>
+        <key>display</key>
+        <string>Math</string>
     </dict>
 </array>
 </plist>
